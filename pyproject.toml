@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxfit"
+version = "1.0.0"
+description = "Pre-flight check: will your files fit in your LLM's context window? Zero-dependency token estimator, fit verdict, trim plan and cost guess."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mehul Patel" }]
+keywords = ["llm", "context-window", "tokens", "prompt", "cli", "ai-agents"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Pre-processors",
+]
+
+[project.scripts]
+ctxfit = "ctxfit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

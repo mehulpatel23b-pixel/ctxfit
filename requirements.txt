@@ -1,0 +1,3 @@
+# ctxfit has zero runtime dependencies — pure Python 3.9+ stdlib.
+# This file exists so `pip install -r requirements.txt` is a clean no-op
+# and traditional tooling recognizes the project.
